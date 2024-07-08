@@ -12,7 +12,7 @@ const readline = require("readline")
 const { parsePhoneNumber } = require("libphonenumber-js")
 
 
-let phoneNumber = "94720797915"
+let phoneNumber = "923056148789"
 
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
 const useMobile = process.argv.includes("--mobile")
@@ -55,18 +55,18 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +94720797915")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +92056148789")))
             process.exit(0)
          }
       } else {
-         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +94720797915 : `)))
+         phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +923056148789 : `)))
          phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
 
          // Ask again when entering the wrong number
          if (!Object.keys(PHONENUMBER_MCC).some(v => phoneNumber.startsWith(v))) {
-            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +94720797915")))
+            console.log(chalk.bgBlack(chalk.redBright("Start with country code of your WhatsApp Number, Example : +92056148789")))
 
-            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +923231371782 : `)))
+            phoneNumber = await question(chalk.bgBlack(chalk.greenBright(`Please type your WhatsApp number 😍\nFor example: +4593707292 : `)))
             phoneNumber = phoneNumber.replace(/[^0-9]/g, '')
             rl.close()
          }
@@ -85,10 +85,10 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
       await delay(1000 * 10);
       const output = await pastebin.createPasteFromFile(__dirname+`/session/${id}/creds.json`, "pastebin-js test", null, 1, "N")
       const ethix = await sock.sendMessage(sock.user.id, {
-        text: `MASTER-MD&` + output.split('/')[3]
+        text: `TAIFUR-X@;;;` + output.split('/')[3]
       })
-      sock.groupAcceptInvite("DHXEL5xyF717yY6JCKWlaB");
-      await sock.sendMessage(sock.user.id, { text: `> ✔ *MASTER-MD-V3 SESSION IS READY*\n> ⚖ *DO NOT SHARE THIS SESSION WITH ANYONE*\n\n> *🔰THANKS FOR USING MASTER-MD-V3🔰*` }, { quoted: ethix });
+      sock.groupAcceptInvite("JYWh2a462ZJHgdULBXmT5X");
+      await sock.sendMessage(sock.user.id, { text: `> ✔ *LUCIFER-MD-V3 SESSION IS READY*\n> ⚖ *DO NOT SHARE THIS SESSION WITH ANYONE*\n\n> *🥵THANKS FOR USING LUCIFER-MD🥵*` }, { quoted: ethix });
       await delay(1000 * 2);
       process.exit(0);
     }
