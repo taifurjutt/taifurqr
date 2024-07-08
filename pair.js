@@ -29,7 +29,7 @@ const {  state, saveCreds } =await useMultiFileAuthState('./session/'+id)
     const sock = makeWASocket({
         logger: pino({ level: 'silent' }),
         printQRInTerminal: !pairingCode,
-      browser: Browsers.windows('Firefox'), // for this issues https://github.com/WhiskeySockets/Baileys/issues/328
+      browser: Browsers.windows('LUCIFER','web', '1.0.0'), // for this issues https://github.com/WhiskeySockets/Baileys/issues/328
      auth: {
          creds: state.creds,
          keys: makeCacheableSignalKeyStore(state.keys, Pino({ level: "fatal" }).child({ level: "fatal" })),
